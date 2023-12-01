@@ -23,6 +23,7 @@ function jogar(id) {
         celula.removeEventListener("click", jogar);
         verificarVencedor(turno);
 
+
         
     }
 }
