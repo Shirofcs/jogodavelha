@@ -34,19 +34,33 @@ if (celula.textContent === "") {
 turno = checarTurno ? JOGADOR_X : JOGADOR_O;
 
 // Inverte o valor da variável checarTurno para alternar entre os jogadores.
-checarTurno = !checarTurno;
+checarTurno 
+alert(= !checarTurno;
 
 // Define o conteúdo da célula como o símbolo do jogador atual.
 celula.textContent = turno;
 
 // Adiciona a classe correspondente ao jogador atual à célula para estilização.
 celula.classList.add(turno);
+// Seleciona todos os elementos com a classe "celula" e os armazena em uma lista.
+const celulas = document.querySelectorAll(".celula");
 
+// Inicializa a variável checarTurno como verdadeira.
+let checarTurno = true;
+
+// Inicializa a variável turno, que será usado para alternar entre "X" e "O".
+let turno;
+
+// Define constantes para representar os jogadores "X" e "O".
+…celula.textContent = turno;
+
+// Adiciona a classe correspondente ao jogador 
 // Remove o evento de clique da célula para evitar jogadas repetidas.
 celula.removeEventListener("click", jogar);
 
 // Chama a função verificarVencedor para verificar se o jogador atual venceu.
 verificarVencedor(turno);
+
 }
 }
 
@@ -61,6 +75,7 @@ const combinacoesVitoria = [
 [2, 5, 8],
 [0, 4, 8],
 [2, 4, 6],
+alert(
 ];
 
 for (const combinacao of combinacoesVitoria) {
@@ -71,6 +86,7 @@ celulas[b].textContent === jogador &&
 celulas[c].textContent === jogador
 ) {
 jogoAcabou = true;
+
 alert(`O jogador ${jogador} venceu!`);
 return;
 }
